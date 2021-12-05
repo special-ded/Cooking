@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="main.css" rel="stylesheet" type="text/css">
+  <link href="dropdown.css" rel="stylesheet" type="text/css">
   <title>Food</title>
 </head>
 <body>
 
 
-  <div class="main_container">
+  <div class="main_container" id="main_section">
 
 <!-- -------SIDE MENU CONTAINER ----- -->
 
@@ -22,12 +23,12 @@
      
      <div class="menu_container">
       <ul class="main_menu">
-        <li><a href="#">РЕЦЕПТЫ</a></li>
+        <li><a href="#recipes_section">РЕЦЕПТЫ</a></li>
         <li><a href="#">ПРОДУКТЫ</a></li>
         <li><a href="#">КАК ПРИГОТОВИТЬ</a></li>
         <li><a href="#">КУЛИНАРНАЯ КНИГА</a></li>
         <li><a href="#">ЗДОРОВЬЕ</a></li>
-        <li><a href="#">АВТОРЫ</a></li>
+        <li><a href="#authors_section">АВТОРЫ</a></li>
       </ul>
      </div>
       
@@ -67,7 +68,20 @@
 <!---------- FILTER BUTTONS --------->
 
         <div class="filter_buttons">
-          <button>Выпечка и десерты <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button><button>Любое блюдо <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button><button>Любая кухня <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button><button>Любое меню <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button><button>Сложность <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button>
+          <button>Выпечка и десерты <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button>
+          <button>Любое блюдо <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button>
+          <button>Любая кухня <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button>
+          <button>Любое меню <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button>
+          <button>
+            <li class="dropdown-top">
+            <a class="dropdown-top" href="/">Сложность  <img src="img/down-arrow-2_icon-icons.com_70191.png"></a>
+              <ul class="dropdown-inside">
+                <li><a href="#">Легко</a></li>
+                <li><a href="#">Средне</a></li>
+                <li><a href="#">Сложно</a></li>
+              </ul>
+            </li>
+          </button>
           <button class="ingredient_btn">Ингридиенты, детали <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button>
           <button class="recipe_btn">Подобрать рецепты <img src="img/down-arrow-2_icon-icons.com_70191.png" class="" alt=""></button>
         </div>
@@ -120,7 +134,7 @@
 
 <!-- LOGO LEAVE -->
 
-<div class="leave">
+<div class="leave" id="recipes_section">
   
   <div>
     <img src="img/Line копия.png" class="leave-logo_line" alt="">
@@ -482,7 +496,7 @@
 
 <!------------- TOP AUTHORS CONTAINER ----------->
 
-<div class="top_authors-container">
+<div class="top_authors-container" id="authors_section">
   <div><p>ТОП АВТОРОВ</p></div>
   <div class="top_authors-container-img"></div>
 </div>
@@ -501,11 +515,11 @@
   <div class="footer_buttons-container">
     
     <div class="footer_buttons">
-      <a href="#" class="recipe_btn1">ГЛАВНАЯ</a> 
-      <a href="#" class="recipe_btn2">РЕЦЕПТЫ</a>
+      <a href="#main_section" class="recipe_btn1">ГЛАВНАЯ</a> 
+      <a href="#recipes_section" class="recipe_btn2">РЕЦЕПТЫ</a>
       <a href="#" class="recipe_btn3">ИДЕИ</a>
       <a href="#" class="recipe_btn3">ЖУРНАЛ</a>
-      <a href="#" class="recipe_btn3">АВТОРЫ</a>
+      <a href="#authors_section" class="recipe_btn3">АВТОРЫ</a>
       <a href="#" class="recipe_btn3">РЕКЛАМА</a>
       <a href="#" class="recipe_btn3">FAQ</a>
     </div>
