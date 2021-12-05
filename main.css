@@ -136,7 +136,7 @@ align-items: center;
   font-size: 16px;
   font-family: "PFDinTextCompPro";
   color: rgb(91, 91, 91);
-  line-height: 2.857;
+  /* line-height: 2.857; */
   text-align: left;
   border-width: 1px;
   border-color: rgb(222, 222, 222);
