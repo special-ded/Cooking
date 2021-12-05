@@ -1,0 +1,24 @@
+.dropdown-inside {
+  line-height: 2;
+  width: 134px;
+  display: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+ul.dropdown-inside li a{
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 16px;
+    font-family: "PFDinTextCompPro";
+    color: rgb(91, 91, 91)
+}
+.dropdown-top{
+  text-decoration: none;
+  list-style-type: none;
+}
+.dropdown-top:hover .dropdown-inside{
+  display: block;
+  position: absolute;
+  background-color: rgb(211, 206, 206);
+  transition: ease-in-out 5s;
+}
